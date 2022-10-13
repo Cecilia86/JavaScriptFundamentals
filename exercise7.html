@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Exercise 7</title>
+  <script type="text/javascript">
+    function start(){
+      document.bgColor = "lightgreen";
+      document.title= 'Dit is een nieuw document';
+      document["title"]+= "!!!";
+    }
+  
+  </script>
+</head>
+<body onload= "start()"">
+  <h2>
+    Exercise 7</h2>
+  <script type="text/javascript">
+  for(let i in document){
+        document.write(`${i} : ${document[i]} <br>`)
+      }
+  </script>
+  This is the last line of the page
+</body>
+</html>

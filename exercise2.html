@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Exercise 2</title>
+</head>
+
+<body>
+  <h2>Exercise 2</h2>
+  
+  <script type="text/javascript">
+  let stuksprijs = window.prompt("Wat is de stuksprijs?")
+  let aantal = window.prompt("Wat is het aantal?")
+  stuksprijs = parseFloat(stuksprijs)
+  aantal = parseInt(aantal)
+  let prijs = aantal * stuksprijs
+  let btw = prijs*0.21
+  document.write(`
+  stuksprijs = €${stuksprijs} <br>
+  aantal = ${aantal} <br> 
+  prijs = €${prijs} <br> 
+  BTW = €${btw} <br> 
+  Totale prijs (5% korting) = €${prijs *= 0.95} <br>`)
+  </script>
+
+  This is the last line of the page
+</body>
+</html>

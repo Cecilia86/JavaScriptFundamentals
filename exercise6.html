@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Exercise 6</title>
+  <script type="text/javascript">
+  </script>
+</head>
+<body>
+  <h2>
+    Exercise 6</h2>
+  <script type="text/javascript">
+    let a= [];
+    let totaal = 0
+    let x
+    for (x=0; x<11; x++){
+      a[x] = x
+    }
+    a[20]=20
+    for(let y =0; y< a.length; y++){
+      if(!isNaN(a[y]))
+      totaal += a[y]
+    }
+    document.write(`lengte array = ${a.length} <br>`)
+    document.write(`totaal is ${totaal}`)
+  </script>
+  <br>This is the last line of the page
+</body>
+</html>

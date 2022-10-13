@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Exercise 8</title>
+  <script type="text/javascript">
+    function start()
+    { let d1= document.getElementById('div1')
+      d1.style.fontWeight= "bold"
+
+      let d2 =document.getElementById('div2')
+      d2.style.color= "blue"
+      d2.style.display= "none"
+
+      let d3 =document.getElementById('div3')
+      d3.style.marginLeft = "10%"
+
+      let d4 =document.getElementById('div4')
+      d4.innerHTML='<i>Nieuwe tekst</i>'
+
+      let d5 = document.getElementById('div5')
+      for(x=1; x<4 ; x++){
+        let p= document.createElement('p')
+        p.innerHTML= `Dit is paragraaf nummer ${x}`
+        d5.appendChild(p)
+      }
+
+      let divs = document. getElementsByTagName('div')
+      for(let x=0 ; x<divs.length; x++){
+        divs[x].style.backgroundColor = "gold"
+      }
+    }
+  </script>
+</head>
+<body onload="start()">
+  <h2>Exercise 8</h2>
+  <div id="div1">
+    This is a first bit of text
+  </div>
+  <div id="div2">
+    This is the second part<br />
+    This is the second part<br />
+    This is the second part<br />
+    This is the second part<br />
+    This is the second part<br />
+  </div>
+  <div id="div3">
+    This is a final part of text
+  </div>
+  <div id="div4"></div>
+  <div id="div5"></div>
+  This is the last line of the page
+</body>
+</html>
